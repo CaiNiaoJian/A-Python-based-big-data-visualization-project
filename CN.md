@@ -34,3 +34,30 @@
    - 雷达图比较军事力量的不同维度（陆军、海军、空军等）
    - 折线图展示军事实力随时间的变化趋势
 ## 更多
+
+## 中文版本
+
+```markdown
+## 开始使用
+
+### 环境设置
+
+1. 克隆仓库：
+```bash
+git clone https://github.com/CaiNiaoJian/A-Python-based-big-data-visualization-project.git
+cd A-Python-based-big-data-visualization-project
+
+# 创建虚拟环境
+python -m venv venv
+
+# 激活虚拟环境
+# Windows系统
+venv\Scripts\activate
+# macOS/Linux系统
+# source venv/bin/activate
+
+# 升级pip到最新版本
+python -m pip install --upgrade pip
+
+# 安装所需包
+pip install -r requirements.txt

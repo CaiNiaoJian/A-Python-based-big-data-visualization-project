@@ -45,3 +45,30 @@ You can consider the following public data sources:
    - Bar charts comparing military expenditure of different countries
    - Radar charts comparing different dimensions of military power (army, navy, air force, etc.)
    - Line charts showing trends in military power over time
+
+## 😊
+### What should you do?
+
+## Getting Started
+
+### Environment Setup
+
+1. Clone the repository:
+```bash
+git clone https://github.com/CaiNiaoJian/A-Python-based-big-data-visualization-project.git
+cd A-Python-based-big-data-visualization-project
+
+# Create virtual environment
+python -m venv venv
+
+# Activate virtual environment
+# For Windows
+venv\Scripts\activate
+# For macOS/Linux
+# source venv/bin/activate
+
+# Upgrade pip to latest version
+python -m pip install --upgrade pip
+
+# Install required packages
+pip install -r requirements.txt
