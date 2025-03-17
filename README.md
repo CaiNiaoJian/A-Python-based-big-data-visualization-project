@@ -95,3 +95,24 @@ The information in this document is the intellectual property of SIPRI. Under SI
 Any commercial use of the data (whether more or less than 10% of the dataset), or any reproduction of more than 10% of the entire dataset, requires specific permission from SIPRI, for which a fee will normally be charged based on the cost of generating the data. Contact milex@sipri.org for further information.
 
 For the purpose of the above, 10% of the SIPRI Military Expenditure Database is defined to consist of 3,500 individual units of data, where a unit of data consists of a figure for military expenditure for one country in one year either in local currency at current prices (financial or calendar year), constant (2022) US$, current US$, or as a share of GDP, in each case together with relevant information contained in the bracketing, special note indicators and footnotes for that country and year; or an estimate of a world or regional total in constant (2022) US$ or current US$, together with the information contained in any bracketing for that figure.
+
+```
+src/
+├── data/               # 数据处理模块
+│   ├── data_loader.py  # 数据加载器
+│   └── data_analyzer.py # 数据分析器
+├── visualization/      # 可视化模块
+│   └── visualizer.py   # 可视化器
+├── utils/              # 工具模块
+│   └── helpers.py      # 辅助函数
+├── ui/                 # UI模块
+│   ├── app.py          # 主应用程序类
+│   └── components/     # UI组件
+│       ├── sidebar.py  # 侧边栏
+│       ├── dashboard.py # 仪表盘视图
+│       ├── map_view.py # 世界地图视图
+│       ├── comparison_view.py # 国家比较视图
+│       ├── trend_view.py # 趋势分析视图
+│       └── about_view.py # 关于视图
+└── main.py             # 程序入口
+```
