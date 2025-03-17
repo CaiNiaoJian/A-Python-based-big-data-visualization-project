@@ -73,6 +73,15 @@ python -m pip install --upgrade pip
 # Install required packages
 pip install -r requirements.txt
 ```
+### By the way, there are some packages should be installed out of the requirements.txt:
+- PIL/Pillow
+- openpyxl
+- kaleido
+- ttkthemes
+- pyinstaller
+- geopandas
+
+### That's all.
 
 ## Data
 The SIPRI Military Expenditure Database includes data for 173 countries for the period 1949-2023. The database has been newly extended, having in the past only covered the period beginning in 1988. The availability of data over time nonetheless varies considerably by country. A majority of countries that existed at the time have data at least from the 1960s.
