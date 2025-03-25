@@ -112,7 +112,7 @@ The SIPRI Military Expenditure Database includes data for 173 countries for the 
 For information on the sources and methods for SIPRI data, including methods for calculating calendar year data from financial year data, for calculating constant price US$ figures, and for estimating missing data for countries as part of the world and regional totals, see https://www.sipri.org/databases/milex/sources-and-methods.
 
 This workbook includes the following worksheets:
-
+
 1) Estimates of world, regional and subregional totals in constant (2022) US$ (billions).
 2) Data for military expenditure by country in current price local currency, presented according to each country's financial year.
 3) Data for military expenditure by country in current price local currency, presented according to calendar year.
@@ -123,9 +123,9 @@ This workbook includes the following worksheets:
 8) Data for military expenditure as a percentage of general government expenditure. (1988-2023 only)
 
 The information in this document is the intellectual property of SIPRI. Under SIPRI's "fair use" policy, the data may be freely used for non-commercial purposes, including research, news reporting, comment, the production of educational materials that are not sold commercially, etc., provided that a) SIPRI is cited as the source of the data, with the citation: "SIPRI Military Expenditure Database 2024, https://www.sipri.org/databases/milex" and b) no more than 10% of the entire dataset is reproduced.
-
+
 Any commercial use of the data (whether more or less than 10% of the dataset), or any reproduction of more than 10% of the entire dataset, requires specific permission from SIPRI, for which a fee will normally be charged based on the cost of generating the data. Contact milex@sipri.org for further information.
-
+
 For the purpose of the above, 10% of the SIPRI Military Expenditure Database is defined to consist of 3,500 individual units of data, where a unit of data consists of a figure for military expenditure for one country in one year either in local currency at current prices (financial or calendar year), constant (2022) US$, current US$, or as a share of GDP, in each case together with relevant information contained in the bracketing, special note indicators and footnotes for that country and year; or an estimate of a world or regional total in constant (2022) US$ or current US$, together with the information contained in any bracketing for that figure.
 
 ```
