@@ -5,6 +5,22 @@
 4. 桌面应用程序
 ---
 ## 🏮
+## 技术栈
+
+![版本](https://img.shields.io/badge/版本-1.0.0-blue) ![Python](https://img.shields.io/badge/Python-3.8+-green) ![CustomTkinter](https://img.shields.io/badge/CustomTkinter-5.2.0-orange) ![状态](https://img.shields.io/badge/状态-完成-success) ![许可证](https://img.shields.io/badge/许可证-MIT-blueviolet) ![数据源](https://img.shields.io/badge/数据源-SIPRI-informational)
+
+![NumPy](https://img.shields.io/badge/NumPy-≥1.20.0-013243?logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-≥1.3.0-150458?logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-≥3.4.0-11557c?logo=python&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-≥5.3.0-3F4F75?logo=plotly&logoColor=white)
+![CustomTkinter](https://img.shields.io/badge/CustomTkinter-≥4.6.0-4B8BBE?logo=python&logoColor=white)
+![Pillow](https://img.shields.io/badge/Pillow-≥9.0.0-FFD43B?logo=python&logoColor=black)
+![Seaborn](https://img.shields.io/badge/Seaborn-≥0.11.0-76B7B2?logo=python&logoColor=white)
+
+![数据可视化](https://img.shields.io/badge/功能-数据可视化-brightgreen)
+![军事数据](https://img.shields.io/badge/领域-军事数据-red)
+![跨平台](https://img.shields.io/badge/特性-跨平台-blueviolet)
+
 ## 世界各国军事实力可视化应用（1960-2024）
 我认为这对军迷来讲，一定是一个非常有趣的项目想法！创建一个展示1960-2024年世界各国军事实力变化的可视化应用完全符合这次项目要求。以下是一些具体建议：
 
@@ -116,3 +132,33 @@ SIPRI军费开支数据库包含173个国家1949-2023年期间的数据。该数
 任何数据的商业使用(无论是否超过数据集的10%)，或任何超过整个数据集10%的复制，都需要获得SIPRI的特别许可，通常会根据生成数据的成本收取费用。欲了解更多信息，请联系milex@sipri.org。
 
 就上述目的而言，SIPRI军费开支数据库的10%被定义为包含3,500个单独的数据单元，其中一个数据单元由一个国家在一年中的军费开支数字组成，可以是以当前价格本地货币计算(财政年度或日历年)、恒定(2022年)美元、当前美元，或占GDP的份额，每种情况下都包括该国家和年份的相关括号信息、特殊注释指标和脚注；或者是以恒定(2022年)美元或当前美元计算的世界或区域总额估计，以及该数字任何括号中包含的信息。
+
+## 错误处理和备用机制
+
+本应用程序实现了一个健壮的错误处理系统，特别是针对可能面临网络相关挑战的地图可视化组件：
+
+1. **增强的plotly_to_image函数**：
+   - 多层错误处理逻辑
+   - 当第一种方式失败时，尝试替代方法来获取图像
+   - 最终情况下，创建一个带有错误消息的图像，而不是抛出异常
+
+2. **强大的地图可视化**：
+   - 使用try-except块来捕获地图创建错误
+   - 当地图创建失败时，提供替代可视化方案：
+     - 显示前20个国家数据的条形图
+     - 作为最后手段的简单表格视图
+
+3. **用户友好的错误消息**：
+   - 清晰解释发生了什么的错误消息
+   - 提供替代视图或解决方案的建议
+   - 引导用户完成恢复选项的状态更新
+
+当用户遇到世界地图问题（例如，加载`world_110m.json`的错误）时，应用程序会：
+1. 首先尝试标准的choropleth地图创建
+2. 如果失败，尝试创建条形图来显示同样的数据
+3. 如果条形图也失败，则显示简单的表格
+4. 如果所有Plotly渲染都失败，则生成一个带有错误消息的图像
+
+这个解决方案保持了代码结构的一致性，同时大大提高了应用程序的鲁棒性。
+
+**注意**：世界地图库的成功使用需要网络访问Plotly的CDN服务器。由于这些服务器位于国际上，用户可能需要在某些网络环境中配置网络代理设置才能成功加载地图。在中国大陆使用时，可能需要借助网络代理工具才能正常显示世界地图。

@@ -257,37 +257,91 @@ class Visualizer:
         # 删除缺失值
         data = data.dropna(subset=[value_col])
         
-        # 创建世界地图
-        fig = px.choropleth(
-            data,
-            locations=data[country_col],  # 国家名称
-            locationmode='country names',  # 使用国家名称作为位置
-            color=data[value_col],  # 颜色映射的值
-            color_continuous_scale=px.colors.sequential.Blues,  # 颜色映射
-            title=title,
-            labels={value_col: '军费支出'},
-            hover_name=data[country_col]
-        )
-        
-        # 设置布局
-        fig.update_layout(
-            title_font_size=20,
-            geo=dict(
-                showframe=False,
-                showcoastlines=True,
-                projection_type='natural earth'
-            ),
-            margin={"r":0,"t":40,"l":0,"b":0},
-            coloraxis_colorbar=dict(
-                title='军费支出',
-                thicknessmode="pixels", thickness=20,
-                lenmode="pixels", len=300,
-                yanchor="top", y=1,
-                ticks="outside"
+        try:
+            # 尝试创建标准的世界地图
+            fig = px.choropleth(
+                data,
+                locations=data[country_col],  # 国家名称
+                locationmode='country names',  # 使用国家名称作为位置
+                color=data[value_col],  # 颜色映射的值
+                color_continuous_scale=px.colors.sequential.Blues,  # 颜色映射
+                title=title,
+                labels={value_col: '军费支出'},
+                hover_name=data[country_col]
             )
-        )
-        
-        return fig
+            
+            # 设置布局
+            fig.update_layout(
+                title_font_size=20,
+                geo=dict(
+                    showframe=False,
+                    showcoastlines=True,
+                    projection_type='natural earth'
+                ),
+                margin={"r":0,"t":40,"l":0,"b":0},
+                coloraxis_colorbar=dict(
+                    title='军费支出',
+                    thicknessmode="pixels", thickness=20,
+                    lenmode="pixels", len=300,
+                    yanchor="top", y=1,
+                    ticks="outside"
+                )
+            )
+            
+            return fig
+            
+        except Exception as e:
+            print(f"创建choropleth地图失败: {e}")
+            
+            # 作为备选方案，创建一个条形图来显示数据
+            try:
+                # 创建条形图作为备选
+                data_sorted = data.sort_values(by=value_col, ascending=False).head(20)
+                fig = go.Figure()
+                
+                fig.add_trace(go.Bar(
+                    x=data_sorted[country_col],
+                    y=data_sorted[value_col],
+                    marker_color=APPLE_COLORS['blue'],
+                    text=data_sorted[value_col].round(1),
+                    textposition='auto'
+                ))
+                
+                fig.update_layout(
+                    title=f"{title} (地图视图不可用，显示前20国家)",
+                    title_font_size=20,
+                    xaxis_title="国家",
+                    yaxis_title="军费支出",
+                    margin=dict(l=50, r=50, t=80, b=100),
+                    xaxis_tickangle=-45
+                )
+                
+                return fig
+                
+            except Exception as e2:
+                print(f"创建备选条形图也失败: {e2}")
+                
+                # 如果条形图也失败，则创建一个简单的表格图
+                fig = go.Figure(data=[go.Table(
+                    header=dict(
+                        values=[country_col, value_col],
+                        fill_color=APPLE_COLORS['blue'],
+                        align='center',
+                        font=dict(color='white', size=14)
+                    ),
+                    cells=dict(
+                        values=[data[country_col].head(20), data[value_col].head(20)],
+                        fill_color='lavender',
+                        align='center'
+                    )
+                )])
+                
+                fig.update_layout(
+                    title=f"{title} (数据表格视图)",
+                    title_font_size=20
+                )
+                
+                return fig
     
     def create_radar_chart(self, data: pd.DataFrame, categories: List[str], 
                            title: str) -> Any:

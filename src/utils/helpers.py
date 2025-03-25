@@ -148,9 +148,60 @@ def plotly_to_image(fig: Any) -> Image.Image:
     Returns:
         PIL Image对象
     """
-    img_bytes = fig.to_image(format="png", engine="kaleido")
-    img = Image.open(io.BytesIO(img_bytes))
-    return img
+    try:
+        # 首先尝试使用kaleido引擎导出
+        img_bytes = fig.to_image(format="png", engine="kaleido")
+        img = Image.open(io.BytesIO(img_bytes))
+        return img
+    except Exception as e:
+        print(f"使用kaleido导出图像失败: {e}")
+        
+        try:
+            # 尝试将Plotly图表保存为HTML并使用普通方式导出
+            buffer = io.BytesIO()
+            fig.write_image(buffer, format="png")
+            buffer.seek(0)
+            return Image.open(buffer)
+        except Exception as e2:
+            print(f"使用write_image导出图像失败: {e2}")
+            
+            # 创建一个空白图像作为后备
+            width, height = 800, 600
+            img = Image.new('RGB', (width, height), color='white')
+            
+            # 尝试从matplotlib创建一个简单的后备图像
+            try:
+                import matplotlib.pyplot as plt
+                fig_fallback, ax = plt.subplots(figsize=(10, 6))
+                title = "无法加载地图视图"
+                if hasattr(fig, 'layout') and hasattr(fig.layout, 'title') and fig.layout.title.text:
+                    title = f"无法加载: {fig.layout.title.text}"
+                ax.text(0.5, 0.5, f"{title}\n\n数据连接错误: 无法获取地图数据\n请检查网络连接后重试", 
+                       horizontalalignment='center', verticalalignment='center', fontsize=14)
+                ax.set_axis_off()
+                plt.tight_layout()
+                
+                # 将matplotlib图表转换为PIL图像
+                buf = io.BytesIO()
+                fig_fallback.savefig(buf, format='png', dpi=100, bbox_inches='tight')
+                buf.seek(0)
+                img = Image.open(buf)
+                plt.close(fig_fallback)
+            except Exception as e3:
+                print(f"创建后备图像失败: {e3}")
+                # 如果matplotlib也失败，则显示纯文本错误消息
+                from PIL import ImageDraw, ImageFont
+                draw = ImageDraw.Draw(img)
+                try:
+                    # 尝试加载字体，失败则使用默认字体
+                    font = ImageFont.truetype("arial.ttf", 16)
+                except:
+                    font = ImageFont.load_default()
+                
+                message = "无法加载地图视图\n\n数据连接错误: 无法获取地图数据\n请检查网络连接后重试"
+                draw.text((width/2, height/2), message, fill="black", font=font, anchor="mm", align="center")
+            
+            return img
 
 def get_continent_for_country(country_name: str) -> str:
     """

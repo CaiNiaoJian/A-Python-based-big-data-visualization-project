@@ -196,31 +196,39 @@ class MapView(ctk.CTkFrame):
                 title
             )
             
-            # 将plotly图表转换为PIL图像
-            self.map_image = plotly_to_image(fig)
-            
-            # 调整图像大小以适应容器
-            container_width = self.map_container.winfo_width()
-            container_height = self.map_container.winfo_height()
-            
-            if container_width > 100 and container_height > 100:
-                self.map_image = self.map_image.resize(
-                    (container_width, container_height),
-                    Image.LANCZOS
-                )
-            
-            # 转换为PhotoImage
-            self.map_photo = ImageTk.PhotoImage(self.map_image)
-            
-            # 更新地图标签
-            self.map_label.configure(text="", image=self.map_photo)
-            
-            # 更新信息
-            self.info_label.configure(text=f"显示 {len(map_data)} 个国家的数据")
+            try:
+                # 将plotly图表转换为PIL图像
+                self.map_image = plotly_to_image(fig)
+                
+                # 调整图像大小以适应容器
+                container_width = self.map_container.winfo_width()
+                container_height = self.map_container.winfo_height()
+                
+                if container_width > 100 and container_height > 100:
+                    self.map_image = self.map_image.resize(
+                        (container_width, container_height),
+                        Image.LANCZOS
+                    )
+                
+                # 转换为PhotoImage
+                self.map_photo = ImageTk.PhotoImage(self.map_image)
+                
+                # 更新地图标签
+                self.map_label.configure(text="", image=self.map_photo)
+                
+                # 更新信息
+                self.info_label.configure(text=f"显示 {len(map_data)} 个国家的数据")
+                
+            except Exception as img_error:
+                print(f"处理地图图像时发生错误: {img_error}")
+                # 显示错误信息，但不中断程序流
+                self.map_label.configure(text=f"地图图像处理失败: 可能是网络连接问题\n请检查网络后重试或使用其他视图类型")
+                self.info_label.configure(text="地图加载失败。您可以尝试使用其他视图类型，或检查网络连接后重试。")
             
         except Exception as e:
             print(f"生成地图时发生错误: {e}")
-            self.map_label.configure(text=f"生成地图时发生错误: {str(e)}")
+            self.map_label.configure(text=f"生成地图时发生错误: {str(e)}\n可能是网络连接问题，请检查网络后重试")
+            self.info_label.configure(text="地图加载失败。您可以尝试使用其他视图类型，或检查网络连接后重试。")
     
     def _on_year_change(self, value):
         """
