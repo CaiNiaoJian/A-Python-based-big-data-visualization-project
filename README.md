@@ -35,6 +35,12 @@ we need a web application.
 ![Military Data](https://img.shields.io/badge/Domain-Military_Data-red)
 ![Cross Platform](https://img.shields.io/badge/Feature-Cross_Platform-blueviolet)
 
+![Web](https://img.shields.io/badge/Feature-Web-blue)
+![React](https://img.shields.io/badge/React-≥18.0.0-61DAFB?logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-≥4.0.0-3178C6?logo=typescript&logoColor=white)
+![Material-UI](https://img.shields.io/badge/Material--UI-≥5.0.0-0081CB?logo=mui&logoColor=white)   
+
+
 ## Project Idea
 ## Military Power Visualization Application for Countries Worldwide (1960-2024)
 This is a very interesting project idea for military fan! Creating a visualization application that displays changes in military power of countries worldwide from 1960 to 2024 perfectly meets your project requirements. Below are some specific suggestions:
@@ -130,6 +136,24 @@ The information in this document is the intellectual property of SIPRI. Under SI
 Any commercial use of the data (whether more or less than 10% of the dataset), or any reproduction of more than 10% of the entire dataset, requires specific permission from SIPRI, for which a fee will normally be charged based on the cost of generating the data. Contact milex@sipri.org for further information.
 
 For the purpose of the above, 10% of the SIPRI Military Expenditure Database is defined to consist of 3,500 individual units of data, where a unit of data consists of a figure for military expenditure for one country in one year either in local currency at current prices (financial or calendar year), constant (2022) US$, current US$, or as a share of GDP, in each case together with relevant information contained in the bracketing, special note indicators and footnotes for that country and year; or an estimate of a world or regional total in constant (2022) US$ or current US$, together with the information contained in any bracketing for that figure.
+
+## Project Updates
+
+### 2024-03-30: Web Frontend Implementation
+
+We've expanded the project to include a React-based web frontend using TypeScript and Material-UI (MUI v7). This addition allows users to access the military power visualization through a modern web interface, complementing the existing Python desktop application.
+
+#### Key Updates:
+- Added a responsive React web application with TypeScript
+- Implemented Material-UI v7 components for modern UI
+- Created homepage with overview of available visualizations
+- Set up routing structure for all main visualization pages
+- Resolved TypeScript compatibility issues with the latest Material-UI version
+- Replaced Grid-based layouts with Box-based flexbox for better compatibility
+
+This web frontend connects to the same data sources as the desktop application but provides a more accessible interface that works across different devices and platforms without installation requirements.
+
+The web version is still under active development, with data visualizations being progressively implemented to match the desktop application's capabilities.
 
 ```
 src/
