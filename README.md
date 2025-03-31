@@ -15,6 +15,9 @@ But I will try my best to finish it in the future maybe.
 2. Technical: Python: GUI+Tkinter+Matplotlib+SQLite or Manim
 3. Engineering: User-friendly installation, usage, and documentation
 4. Desktop application
+
+we need a web application.
+
 ---
 ## tech
 
