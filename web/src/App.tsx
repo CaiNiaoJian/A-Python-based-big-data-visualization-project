@@ -10,8 +10,8 @@ import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';
 import Map from './pages/Map';
-// import Comparison from './pages/Comparison';
-// import Trend from './pages/Trend';
+import Comparison from './pages/Comparison';
+import Trend from './pages/Trend';
 
 // 创建一个主题
 const theme = createTheme({
@@ -37,8 +37,8 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/map" element={<Map />} />
-              <Route path="/comparison" element={<div>Comparison (待实现)</div>} />
-              <Route path="/trend" element={<div>Trend Analysis (待实现)</div>} />
+              <Route path="/comparison" element={<Comparison />} />
+              <Route path="/trend" element={<Trend />} />
               <Route path="*" element={<div>404 - Not Found</div>} />
             </Routes>
           </Container>
