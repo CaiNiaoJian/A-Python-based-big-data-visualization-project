@@ -1,0 +1,1067 @@
+[
+    {
+        "Country": "Algeria",
+        "Continent": "african",
+        "Expenditure": 136.7570977918
+    },
+    {
+        "Country": "Libya",
+        "Continent": "african",
+        "Expenditure": 298.3074800184
+    },
+    {
+        "Country": "Morocco",
+        "Continent": "african",
+        "Expenditure": 185.7839938445
+    },
+    {
+        "Country": "Tunisia",
+        "Continent": "african",
+        "Expenditure": 38.1882181045
+    },
+    {
+        "Country": "Benin",
+        "Continent": "african",
+        "Expenditure": 6.6984014465
+    },
+    {
+        "Country": "Burkina Faso",
+        "Continent": "african",
+        "Expenditure": 6.0792591828
+    },
+    {
+        "Country": "Burundi",
+        "Continent": "african",
+        "Expenditure": 5.9230675992
+    },
+    {
+        "Country": "Cameroon",
+        "Continent": "african",
+        "Expenditure": 31.6368237105
+    },
+    {
+        "Country": "Congo, DR",
+        "Continent": "african",
+        "Expenditure": 102.3952095808
+    },
+    {
+        "Country": "Congo, Republic",
+        "Continent": "african",
+        "Expenditure": 19.4267101562
+    },
+    {
+        "Country": "Cote d'Ivoire",
+        "Continent": "african",
+        "Expenditure": 28.7138441107
+    },
+    {
+        "Country": "Ethiopia",
+        "Continent": "african",
+        "Expenditure": 48.4335914235
+    },
+    {
+        "Country": "Gabon",
+        "Continent": "african",
+        "Expenditure": 9.4217300988
+    },
+    {
+        "Country": "Ghana",
+        "Continent": "african",
+        "Expenditure": 41.0522428438
+    },
+    {
+        "Country": "Guinea",
+        "Continent": "african",
+        "Expenditure": 36.0589107023
+    },
+    {
+        "Country": "Kenya",
+        "Continent": "african",
+        "Expenditure": 37.3199171555
+    },
+    {
+        "Country": "Liberia",
+        "Continent": "african",
+        "Expenditure": 3.75
+    },
+    {
+        "Country": "Madagascar",
+        "Continent": "african",
+        "Expenditure": 20.346496118
+    },
+    {
+        "Country": "Malawi",
+        "Continent": "african",
+        "Expenditure": 4.7115574749
+    },
+    {
+        "Country": "Mali",
+        "Continent": "african",
+        "Expenditure": 10.9740722961
+    },
+    {
+        "Country": "Mauritius",
+        "Continent": "african",
+        "Expenditure": 0.6431139947
+    },
+    {
+        "Country": "Nigeria",
+        "Continent": "african",
+        "Expenditure": 1020.2235919106
+    },
+    {
+        "Country": "Rwanda",
+        "Continent": "african",
+        "Expenditure": 9.3658397083
+    },
+    {
+        "Country": "Sierra Leone",
+        "Continent": "african",
+        "Expenditure": 5.0224048254
+    },
+    {
+        "Country": "Somalia",
+        "Continent": "african",
+        "Expenditure": 16.1
+    },
+    {
+        "Country": "South Africa",
+        "Continent": "african",
+        "Expenditure": 752.9263256187
+    },
+    {
+        "Country": "Sudan",
+        "Continent": "african",
+        "Expenditure": 113.1533601379
+    },
+    {
+        "Country": "Tanzania",
+        "Continent": "african",
+        "Expenditure": 77.9160102445
+    },
+    {
+        "Country": "Togo",
+        "Continent": "african",
+        "Expenditure": 6.873376434
+    },
+    {
+        "Country": "Uganda",
+        "Continent": "african",
+        "Expenditure": 64.8726402666
+    },
+    {
+        "Country": "Zimbabwe",
+        "Continent": "african",
+        "Expenditure": 86.9
+    },
+    {
+        "Country": "Australia",
+        "Continent": "aisan",
+        "Expenditure": 1855.7293065926
+    },
+    {
+        "Country": "Fiji",
+        "Continent": "aisan",
+        "Expenditure": 0.9317270694
+    },
+    {
+        "Country": "New Zealand",
+        "Continent": "aisan",
+        "Expenditure": 246.3314929724
+    },
+    {
+        "Country": "Afghanistan",
+        "Continent": "aisan",
+        "Expenditure": 3.3412715512
+    },
+    {
+        "Country": "Bangladesh",
+        "Continent": "aisan",
+        "Expenditure": 48.6068001314
+    },
+    {
+        "Country": "India",
+        "Continent": "aisan",
+        "Expenditure": 2529.9210543991
+    },
+    {
+        "Country": "Nepal",
+        "Continent": "aisan",
+        "Expenditure": 7.1527479349
+    },
+    {
+        "Country": "Pakistan",
+        "Continent": "aisan",
+        "Expenditure": 477.6246341646
+    },
+    {
+        "Country": "Sri Lanka",
+        "Continent": "aisan",
+        "Expenditure": 25.1464271769
+    },
+    {
+        "Country": "Japan",
+        "Continent": "aisan",
+        "Expenditure": 3374.5611000287
+    },
+    {
+        "Country": "Korea, South",
+        "Continent": "aisan",
+        "Expenditure": 544.7853746466
+    },
+    {
+        "Country": "Brunei",
+        "Continent": "aisan",
+        "Expenditure": 14.2155227814
+    },
+    {
+        "Country": "Laos",
+        "Continent": "aisan",
+        "Expenditure": 21.2202979662
+    },
+    {
+        "Country": "Malaysia",
+        "Continent": "aisan",
+        "Expenditure": 296.7261892581
+    },
+    {
+        "Country": "Myanmar",
+        "Continent": "aisan",
+        "Expenditure": 152.4523174577
+    },
+    {
+        "Country": "Philippines",
+        "Continent": "aisan",
+        "Expenditure": 301.2012527604
+    },
+    {
+        "Country": "Singapore",
+        "Continent": "aisan",
+        "Expenditure": 198.8914978208
+    },
+    {
+        "Country": "Thailand",
+        "Continent": "aisan",
+        "Expenditure": 312.4084990923
+    },
+    {
+        "Country": "Costa Rica",
+        "Continent": "american",
+        "Expenditure": 0.0
+    },
+    {
+        "Country": "Dominican Republic",
+        "Continent": "american",
+        "Expenditure": 42.0
+    },
+    {
+        "Country": "El Salvador",
+        "Continent": "american",
+        "Expenditure": 12.4756441281
+    },
+    {
+        "Country": "Guatemala",
+        "Continent": "american",
+        "Expenditure": 23.4
+    },
+    {
+        "Country": "Honduras",
+        "Continent": "american",
+        "Expenditure": 15.95
+    },
+    {
+        "Country": "Mexico",
+        "Continent": "american",
+        "Expenditure": 300.8
+    },
+    {
+        "Country": "Nicaragua",
+        "Continent": "american",
+        "Expenditure": 10.4337529481
+    },
+    {
+        "Country": "Trinidad and Tobago",
+        "Continent": "american",
+        "Expenditure": 8.9448862302
+    },
+    {
+        "Country": "Canada",
+        "Continent": "american",
+        "Expenditure": 2363.0609551236
+    },
+    {
+        "Country": "United States of America",
+        "Continent": "american",
+        "Expenditure": 81469.7944075887
+    },
+    {
+        "Country": "Argentina",
+        "Continent": "american",
+        "Expenditure": 1294.0
+    },
+    {
+        "Country": "Bolivia",
+        "Continent": "american",
+        "Expenditure": 21.1291399667
+    },
+    {
+        "Country": "Brazil",
+        "Continent": "american",
+        "Expenditure": 1512.6709770874
+    },
+    {
+        "Country": "Chile",
+        "Continent": "american",
+        "Expenditure": 1005.9197201638
+    },
+    {
+        "Country": "Colombia",
+        "Continent": "american",
+        "Expenditure": 173.8799340018
+    },
+    {
+        "Country": "Ecuador",
+        "Continent": "american",
+        "Expenditure": 49.2
+    },
+    {
+        "Country": "Guyana",
+        "Continent": "american",
+        "Expenditure": 5.032808212
+    },
+    {
+        "Country": "Paraguay",
+        "Continent": "american",
+        "Expenditure": 30.9158730159
+    },
+    {
+        "Country": "Peru",
+        "Continent": "american",
+        "Expenditure": 364.3410852713
+    },
+    {
+        "Country": "Uruguay",
+        "Continent": "american",
+        "Expenditure": 112.4655982435
+    },
+    {
+        "Country": "Venezuela",
+        "Continent": "american",
+        "Expenditure": 420.9302325581
+    },
+    {
+        "Country": "Country",
+        "Continent": "current_data",
+        "Expenditure": 1973.0
+    },
+    {
+        "Country": "Algeria",
+        "Continent": "current_data",
+        "Expenditure": 136.7570977918
+    },
+    {
+        "Country": "Libya",
+        "Continent": "current_data",
+        "Expenditure": 298.3074800184
+    },
+    {
+        "Country": "Morocco",
+        "Continent": "current_data",
+        "Expenditure": 185.7839938445
+    },
+    {
+        "Country": "Tunisia",
+        "Continent": "current_data",
+        "Expenditure": 38.1882181045
+    },
+    {
+        "Country": "Benin",
+        "Continent": "current_data",
+        "Expenditure": 6.6984014465
+    },
+    {
+        "Country": "Burkina Faso",
+        "Continent": "current_data",
+        "Expenditure": 6.0792591828
+    },
+    {
+        "Country": "Burundi",
+        "Continent": "current_data",
+        "Expenditure": 5.9230675992
+    },
+    {
+        "Country": "Cameroon",
+        "Continent": "current_data",
+        "Expenditure": 31.6368237105
+    },
+    {
+        "Country": "Congo, DR",
+        "Continent": "current_data",
+        "Expenditure": 102.3952095808
+    },
+    {
+        "Country": "Congo, Republic",
+        "Continent": "current_data",
+        "Expenditure": 19.4267101562
+    },
+    {
+        "Country": "Cote d'Ivoire",
+        "Continent": "current_data",
+        "Expenditure": 28.7138441107
+    },
+    {
+        "Country": "Ethiopia",
+        "Continent": "current_data",
+        "Expenditure": 48.4335914235
+    },
+    {
+        "Country": "Gabon",
+        "Continent": "current_data",
+        "Expenditure": 9.4217300988
+    },
+    {
+        "Country": "Ghana",
+        "Continent": "current_data",
+        "Expenditure": 41.0522428438
+    },
+    {
+        "Country": "Guinea",
+        "Continent": "current_data",
+        "Expenditure": 36.0589107023
+    },
+    {
+        "Country": "Kenya",
+        "Continent": "current_data",
+        "Expenditure": 37.3199171555
+    },
+    {
+        "Country": "Liberia",
+        "Continent": "current_data",
+        "Expenditure": 3.75
+    },
+    {
+        "Country": "Madagascar",
+        "Continent": "current_data",
+        "Expenditure": 20.346496118
+    },
+    {
+        "Country": "Malawi",
+        "Continent": "current_data",
+        "Expenditure": 4.7115574749
+    },
+    {
+        "Country": "Mali",
+        "Continent": "current_data",
+        "Expenditure": 10.9740722961
+    },
+    {
+        "Country": "Mauritius",
+        "Continent": "current_data",
+        "Expenditure": 0.6431139947
+    },
+    {
+        "Country": "Nigeria",
+        "Continent": "current_data",
+        "Expenditure": 1020.2235919106
+    },
+    {
+        "Country": "Rwanda",
+        "Continent": "current_data",
+        "Expenditure": 9.3658397083
+    },
+    {
+        "Country": "Sierra Leone",
+        "Continent": "current_data",
+        "Expenditure": 5.0224048254
+    },
+    {
+        "Country": "Somalia",
+        "Continent": "current_data",
+        "Expenditure": 16.1
+    },
+    {
+        "Country": "South Africa",
+        "Continent": "current_data",
+        "Expenditure": 752.9263256187
+    },
+    {
+        "Country": "Sudan",
+        "Continent": "current_data",
+        "Expenditure": 113.1533601379
+    },
+    {
+        "Country": "Tanzania",
+        "Continent": "current_data",
+        "Expenditure": 77.9160102445
+    },
+    {
+        "Country": "Togo",
+        "Continent": "current_data",
+        "Expenditure": 6.873376434
+    },
+    {
+        "Country": "Uganda",
+        "Continent": "current_data",
+        "Expenditure": 64.8726402666
+    },
+    {
+        "Country": "Zimbabwe",
+        "Continent": "current_data",
+        "Expenditure": 86.9
+    },
+    {
+        "Country": "Costa Rica",
+        "Continent": "current_data",
+        "Expenditure": 0.0
+    },
+    {
+        "Country": "Dominican Republic",
+        "Continent": "current_data",
+        "Expenditure": 42.0
+    },
+    {
+        "Country": "El Salvador",
+        "Continent": "current_data",
+        "Expenditure": 12.4756441281
+    },
+    {
+        "Country": "Guatemala",
+        "Continent": "current_data",
+        "Expenditure": 23.4
+    },
+    {
+        "Country": "Honduras",
+        "Continent": "current_data",
+        "Expenditure": 15.95
+    },
+    {
+        "Country": "Mexico",
+        "Continent": "current_data",
+        "Expenditure": 300.8
+    },
+    {
+        "Country": "Nicaragua",
+        "Continent": "current_data",
+        "Expenditure": 10.4337529481
+    },
+    {
+        "Country": "Trinidad and Tobago",
+        "Continent": "current_data",
+        "Expenditure": 8.9448862302
+    },
+    {
+        "Country": "Canada",
+        "Continent": "current_data",
+        "Expenditure": 2363.0609551236
+    },
+    {
+        "Country": "United States of America",
+        "Continent": "current_data",
+        "Expenditure": 81469.7944075887
+    },
+    {
+        "Country": "Argentina",
+        "Continent": "current_data",
+        "Expenditure": 1294.0
+    },
+    {
+        "Country": "Bolivia",
+        "Continent": "current_data",
+        "Expenditure": 21.1291399667
+    },
+    {
+        "Country": "Brazil",
+        "Continent": "current_data",
+        "Expenditure": 1512.6709770874
+    },
+    {
+        "Country": "Chile",
+        "Continent": "current_data",
+        "Expenditure": 1005.9197201638
+    },
+    {
+        "Country": "Colombia",
+        "Continent": "current_data",
+        "Expenditure": 173.8799340018
+    },
+    {
+        "Country": "Ecuador",
+        "Continent": "current_data",
+        "Expenditure": 49.2
+    },
+    {
+        "Country": "Guyana",
+        "Continent": "current_data",
+        "Expenditure": 5.032808212
+    },
+    {
+        "Country": "Paraguay",
+        "Continent": "current_data",
+        "Expenditure": 30.9158730159
+    },
+    {
+        "Country": "Peru",
+        "Continent": "current_data",
+        "Expenditure": 364.3410852713
+    },
+    {
+        "Country": "Uruguay",
+        "Continent": "current_data",
+        "Expenditure": 112.4655982435
+    },
+    {
+        "Country": "Venezuela",
+        "Continent": "current_data",
+        "Expenditure": 420.9302325581
+    },
+    {
+        "Country": "Australia",
+        "Continent": "current_data",
+        "Expenditure": 1855.7293065926
+    },
+    {
+        "Country": "Fiji",
+        "Continent": "current_data",
+        "Expenditure": 0.9317270694
+    },
+    {
+        "Country": "New Zealand",
+        "Continent": "current_data",
+        "Expenditure": 246.3314929724
+    },
+    {
+        "Country": "Afghanistan",
+        "Continent": "current_data",
+        "Expenditure": 3.3412715512
+    },
+    {
+        "Country": "Bangladesh",
+        "Continent": "current_data",
+        "Expenditure": 48.6068001314
+    },
+    {
+        "Country": "India",
+        "Continent": "current_data",
+        "Expenditure": 2529.9210543991
+    },
+    {
+        "Country": "Nepal",
+        "Continent": "current_data",
+        "Expenditure": 7.1527479349
+    },
+    {
+        "Country": "Pakistan",
+        "Continent": "current_data",
+        "Expenditure": 477.6246341646
+    },
+    {
+        "Country": "Sri Lanka",
+        "Continent": "current_data",
+        "Expenditure": 25.1464271769
+    },
+    {
+        "Country": "Japan",
+        "Continent": "current_data",
+        "Expenditure": 3374.5611000287
+    },
+    {
+        "Country": "Korea, South",
+        "Continent": "current_data",
+        "Expenditure": 544.7853746466
+    },
+    {
+        "Country": "Brunei",
+        "Continent": "current_data",
+        "Expenditure": 14.2155227814
+    },
+    {
+        "Country": "Laos",
+        "Continent": "current_data",
+        "Expenditure": 21.2202979662
+    },
+    {
+        "Country": "Malaysia",
+        "Continent": "current_data",
+        "Expenditure": 296.7261892581
+    },
+    {
+        "Country": "Myanmar",
+        "Continent": "current_data",
+        "Expenditure": 152.4523174577
+    },
+    {
+        "Country": "Philippines",
+        "Continent": "current_data",
+        "Expenditure": 301.2012527604
+    },
+    {
+        "Country": "Singapore",
+        "Continent": "current_data",
+        "Expenditure": 198.8914978208
+    },
+    {
+        "Country": "Thailand",
+        "Continent": "current_data",
+        "Expenditure": 312.4084990923
+    },
+    {
+        "Country": "Czechoslovakia",
+        "Continent": "current_data",
+        "Expenditure": 0.0
+    },
+    {
+        "Country": "German Democratic Republic",
+        "Continent": "current_data",
+        "Expenditure": 0.0
+    },
+    {
+        "Country": "Hungary",
+        "Continent": "current_data",
+        "Expenditure": 263.447030809
+    },
+    {
+        "Country": "Poland",
+        "Continent": "current_data",
+        "Expenditure": 12059.7014925373
+    },
+    {
+        "Country": "Romania",
+        "Continent": "current_data",
+        "Expenditure": 545.3810218046
+    },
+    {
+        "Country": "Yugoslavia",
+        "Continent": "current_data",
+        "Expenditure": 0.0
+    },
+    {
+        "Country": "Austria",
+        "Continent": "current_data",
+        "Expenditure": 328.8988214459
+    },
+    {
+        "Country": "Belgium",
+        "Continent": "current_data",
+        "Expenditure": 1296.5197753679
+    },
+    {
+        "Country": "Denmark",
+        "Continent": "current_data",
+        "Expenditure": 581.8662699397
+    },
+    {
+        "Country": "Finland",
+        "Continent": "current_data",
+        "Expenditure": 276.967793936
+    },
+    {
+        "Country": "France",
+        "Continent": "current_data",
+        "Expenditure": 7976.5353019881
+    },
+    {
+        "Country": "Germany",
+        "Continent": "current_data",
+        "Expenditure": 11237.9048080976
+    },
+    {
+        "Country": "Greece",
+        "Continent": "current_data",
+        "Expenditure": 674.8024522377
+    },
+    {
+        "Country": "Ireland",
+        "Continent": "current_data",
+        "Expenditure": 98.3078318251
+    },
+    {
+        "Country": "Italy",
+        "Continent": "current_data",
+        "Expenditure": 3638.2401392266
+    },
+    {
+        "Country": "Luxembourg",
+        "Continent": "current_data",
+        "Expenditure": 13.9322716689
+    },
+    {
+        "Country": "Netherlands",
+        "Continent": "current_data",
+        "Expenditure": 1917.1192760352
+    },
+    {
+        "Country": "Norway",
+        "Continent": "current_data",
+        "Expenditure": 607.8916652069
+    },
+    {
+        "Country": "Portugal",
+        "Continent": "current_data",
+        "Expenditure": 515.5673268848
+    },
+    {
+        "Country": "Spain",
+        "Continent": "current_data",
+        "Expenditure": 1521.3194345281
+    },
+    {
+        "Country": "Sweden",
+        "Continent": "current_data",
+        "Expenditure": 1702.2153529109
+    },
+    {
+        "Country": "Switzerland",
+        "Continent": "current_data",
+        "Expenditure": 764.9699983885
+    },
+    {
+        "Country": "United Kingdom",
+        "Continent": "current_data",
+        "Expenditure": 9446.8941240415
+    },
+    {
+        "Country": "Bahrain",
+        "Continent": "current_data",
+        "Expenditure": 16.765508095
+    },
+    {
+        "Country": "Egypt",
+        "Continent": "current_data",
+        "Expenditure": 1243.856104695
+    },
+    {
+        "Country": "Iran",
+        "Continent": "current_data",
+        "Expenditure": 480.857166913
+    },
+    {
+        "Country": "Iraq",
+        "Continent": "current_data",
+        "Expenditure": 665.1852889854
+    },
+    {
+        "Country": "Israel",
+        "Continent": "current_data",
+        "Expenditure": 2574.5049097788
+    },
+    {
+        "Country": "Jordan",
+        "Continent": "current_data",
+        "Expenditure": 150.6523704161
+    },
+    {
+        "Country": "Kuwait",
+        "Continent": "current_data",
+        "Expenditure": 136.5604305194
+    },
+    {
+        "Country": "Lebanon",
+        "Continent": "current_data",
+        "Expenditure": 103.815507202
+    },
+    {
+        "Country": "Oman",
+        "Continent": "current_data",
+        "Expenditure": 89.8265065188
+    },
+    {
+        "Country": "Saudi Arabia",
+        "Continent": "current_data",
+        "Expenditure": 1565.5899357631
+    },
+    {
+        "Country": "Syria",
+        "Continent": "current_data",
+        "Expenditure": 388.6745569869
+    },
+    {
+        "Country": "Türkiye",
+        "Continent": "current_data",
+        "Expenditure": 861.6254416961
+    },
+    {
+        "Country": "Yemen, North",
+        "Continent": "current_data",
+        "Expenditure": 0.0
+    },
+    {
+        "Country": "Bahrain",
+        "Continent": "easternasian",
+        "Expenditure": 16.765508095
+    },
+    {
+        "Country": "Egypt",
+        "Continent": "easternasian",
+        "Expenditure": 1243.856104695
+    },
+    {
+        "Country": "Iran",
+        "Continent": "easternasian",
+        "Expenditure": 480.857166913
+    },
+    {
+        "Country": "Iraq",
+        "Continent": "easternasian",
+        "Expenditure": 665.1852889854
+    },
+    {
+        "Country": "Israel",
+        "Continent": "easternasian",
+        "Expenditure": 2574.5049097788
+    },
+    {
+        "Country": "Jordan",
+        "Continent": "easternasian",
+        "Expenditure": 150.6523704161
+    },
+    {
+        "Country": "Kuwait",
+        "Continent": "easternasian",
+        "Expenditure": 136.5604305194
+    },
+    {
+        "Country": "Lebanon",
+        "Continent": "easternasian",
+        "Expenditure": 103.815507202
+    },
+    {
+        "Country": "Oman",
+        "Continent": "easternasian",
+        "Expenditure": 89.8265065188
+    },
+    {
+        "Country": "Saudi Arabia",
+        "Continent": "easternasian",
+        "Expenditure": 1565.5899357631
+    },
+    {
+        "Country": "Syria",
+        "Continent": "easternasian",
+        "Expenditure": 388.6745569869
+    },
+    {
+        "Country": "Türkiye",
+        "Continent": "easternasian",
+        "Expenditure": 861.6254416961
+    },
+    {
+        "Country": "Yemen, North",
+        "Continent": "easternasian",
+        "Expenditure": 0.0
+    },
+    {
+        "Country": "Czechoslovakia",
+        "Continent": "europen",
+        "Expenditure": 0.0
+    },
+    {
+        "Country": "German Democratic Republic",
+        "Continent": "europen",
+        "Expenditure": 0.0
+    },
+    {
+        "Country": "Hungary",
+        "Continent": "europen",
+        "Expenditure": 263.447030809
+    },
+    {
+        "Country": "Poland",
+        "Continent": "europen",
+        "Expenditure": 12059.7014925373
+    },
+    {
+        "Country": "Romania",
+        "Continent": "europen",
+        "Expenditure": 545.3810218046
+    },
+    {
+        "Country": "Yugoslavia",
+        "Continent": "europen",
+        "Expenditure": 0.0
+    },
+    {
+        "Country": "Austria",
+        "Continent": "europen",
+        "Expenditure": 328.8988214459
+    },
+    {
+        "Country": "Belgium",
+        "Continent": "europen",
+        "Expenditure": 1296.5197753679
+    },
+    {
+        "Country": "Denmark",
+        "Continent": "europen",
+        "Expenditure": 581.8662699397
+    },
+    {
+        "Country": "Finland",
+        "Continent": "europen",
+        "Expenditure": 276.967793936
+    },
+    {
+        "Country": "France",
+        "Continent": "europen",
+        "Expenditure": 7976.5353019881
+    },
+    {
+        "Country": "Germany",
+        "Continent": "europen",
+        "Expenditure": 11237.9048080976
+    },
+    {
+        "Country": "Greece",
+        "Continent": "europen",
+        "Expenditure": 674.8024522377
+    },
+    {
+        "Country": "Ireland",
+        "Continent": "europen",
+        "Expenditure": 98.3078318251
+    },
+    {
+        "Country": "Italy",
+        "Continent": "europen",
+        "Expenditure": 3638.2401392266
+    },
+    {
+        "Country": "Luxembourg",
+        "Continent": "europen",
+        "Expenditure": 13.9322716689
+    },
+    {
+        "Country": "Netherlands",
+        "Continent": "europen",
+        "Expenditure": 1917.1192760352
+    },
+    {
+        "Country": "Norway",
+        "Continent": "europen",
+        "Expenditure": 607.8916652069
+    },
+    {
+        "Country": "Portugal",
+        "Continent": "europen",
+        "Expenditure": 515.5673268848
+    },
+    {
+        "Country": "Spain",
+        "Continent": "europen",
+        "Expenditure": 1521.3194345281
+    },
+    {
+        "Country": "Sweden",
+        "Continent": "europen",
+        "Expenditure": 1702.2153529109
+    },
+    {
+        "Country": "Switzerland",
+        "Continent": "europen",
+        "Expenditure": 764.9699983885
+    },
+    {
+        "Country": "United Kingdom",
+        "Continent": "europen",
+        "Expenditure": 9446.8941240415
+    }
+]

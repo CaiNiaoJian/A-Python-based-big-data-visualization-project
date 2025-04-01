@@ -1,0 +1,67 @@
+[
+    {
+        "Country": "Australia",
+        "Continent": "aisan",
+        "Expenditure": 0.0
+    },
+    {
+        "Country": "Costa Rica",
+        "Continent": "american",
+        "Expenditure": 0.0
+    },
+    {
+        "Country": "Mexico",
+        "Continent": "american",
+        "Expenditure": 58.0844490216
+    },
+    {
+        "Country": "Argentina",
+        "Continent": "american",
+        "Expenditure": 0.0
+    },
+    {
+        "Country": "Peru",
+        "Continent": "american",
+        "Expenditure": 14.6583850932
+    },
+    {
+        "Country": "Country",
+        "Continent": "current_data",
+        "Expenditure": 1948.0
+    },
+    {
+        "Country": "Costa Rica",
+        "Continent": "current_data",
+        "Expenditure": 0.0
+    },
+    {
+        "Country": "Mexico",
+        "Continent": "current_data",
+        "Expenditure": 58.0844490216
+    },
+    {
+        "Country": "Argentina",
+        "Continent": "current_data",
+        "Expenditure": 0.0
+    },
+    {
+        "Country": "Peru",
+        "Continent": "current_data",
+        "Expenditure": 14.6583850932
+    },
+    {
+        "Country": "Australia",
+        "Continent": "current_data",
+        "Expenditure": 0.0
+    },
+    {
+        "Country": "Spain",
+        "Continent": "current_data",
+        "Expenditure": 193.7355355668
+    },
+    {
+        "Country": "Spain",
+        "Continent": "europen",
+        "Expenditure": 193.7355355668
+    }
+]
