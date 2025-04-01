@@ -8,8 +8,8 @@ import NavBar from './components/NavBar';
 
 // 导入页面组件
 import Home from './pages/Home';
-// import Dashboard from './pages/Dashboard';
-// import Map from './pages/Map';
+import Dashboard from './pages/Dashboard';
+import Map from './pages/Map';
 // import Comparison from './pages/Comparison';
 // import Trend from './pages/Trend';
 
@@ -35,8 +35,8 @@ function App() {
           <Container maxWidth="lg" style={{ marginTop: '2rem' }}>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/dashboard" element={<div>Dashboard (待实现)</div>} />
-              <Route path="/map" element={<div>Map View (待实现)</div>} />
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/map" element={<Map />} />
               <Route path="/comparison" element={<div>Comparison (待实现)</div>} />
               <Route path="/trend" element={<div>Trend Analysis (待实现)</div>} />
               <Route path="*" element={<div>404 - Not Found</div>} />
