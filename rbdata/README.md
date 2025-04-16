@@ -11,3 +11,8 @@ This large file is more like a report-type dataset. Using it directly for import
 - "xx" means not recorded, which can be deleted and processed as NULL or recorded as 0. In future real-time change operations, maintain the data from previous columns without making changes or assignments
 
 ## To be continued
+
+## Based on information released from White House with detailed information about the trade between US and the rest of countries.
+- You will find the relevant information for each country, including Exports, Imports and Deficit (or surplus).
+
+- Version 2 includes population (if data is available). Figures gathered from https://datahub.io/core/population
