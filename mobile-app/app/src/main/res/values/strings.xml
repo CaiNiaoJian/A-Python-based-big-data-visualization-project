@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">军事力量可视化</string>
+
+    <!-- 底部导航 -->
+    <string name="bottom_nav_home">首页</string>
+    <string name="bottom_nav_map">世界地图</string>
+    <string name="bottom_nav_comparison">对比</string>
+    <string name="bottom_nav_trends">趋势</string>
+    <string name="bottom_nav_settings">设置</string>
+
+    <!-- 首页 -->
+    <string name="home_title">军事力量可视化</string>
+    <string name="home_subtitle">探索全球军事力量数据</string>
+    <string name="home_top_countries">军费开支排名前20国家</string>
+    <string name="home_yearly_trends">年度趋势</string>
+    <string name="home_continent_overview">大洲概览</string>
+    <string name="home_search_hint">搜索国家...</string>
+    <string name="home_refresh">刷新数据</string>
+
+    <!-- 地图页 -->
+    <string name="map_title">全球军力地图</string>
+    <string name="map_subtitle">探索全球军力分布</string>
+    <string name="map_placeholder">地图视图将在此处显示，正在开发中...</string>
+    <string name="map_year_selector">选择年份</string>
+    <string name="map_legend_title">图例 (百万美元)</string>
+    <string name="map_data_not_available">数据不可用</string>
+
+    <!-- 对比页 -->
+    <string name="comparison_title">国家军力对比</string>
+    <string name="comparison_subtitle">比较不同国家军事实力</string>
+    <string name="comparison_empty">请选择要比较的国家</string>
+    <string name="comparison_add_country">添加国家</string>
+    <string name="comparison_add_more">添加更多国家</string>
+    <string name="comparison_selected_countries">已选择的国家</string>
+    <string name="comparison_chart_placeholder">图表将在此处显示，正在开发中...</string>
+    <string name="remove">移除</string>
+    <string name="comparison_year_range">年份范围</string>
+    <string name="comparison_save">保存对比</string>
+    <string name="comparison_saved">已保存对比</string>
+    <string name="comparison_expenditure">军费开支</string>
+    <string name="comparison_gdp_percentage">占GDP百分比</string>
+    <string name="comparison_per_capita">人均军费</string>
+
+    <!-- 趋势页 -->
+    <string name="trends_title">军力趋势分析</string>
+    <string name="trends_subtitle">分析军事力量变化趋势</string>
+    <string name="trends_filter">筛选条件</string>
+    <string name="trends_chart_placeholder">趋势图表将在此处显示，正在开发中...</string>
+    <string name="trends_select_country">选择国家</string>
+    <string name="trends_select_data_type">选择数据类型</string>
+    <string name="trends_global">全球趋势</string>
+    <string name="trends_continental">大洲趋势</string>
+    <string name="trends_year_range">年份范围</string>
+    <string name="trends_chart_type">图表类型</string>
+    <string name="trends_line_chart">折线图</string>
+    <string name="trends_area_chart">面积图</string>
+    <string name="trends_bar_chart">柱状图</string>
+
+    <!-- 设置页 -->
+    <string name="settings_title">设置</string>
+    <string name="settings_theme">主题设置</string>
+    <string name="settings_theme_light">浅色</string>
+    <string name="settings_theme_dark">深色</string>
+    <string name="settings_theme_system">跟随系统</string>
+    <string name="settings_language">语言</string>
+    <string name="settings_language_zh">中文</string>
+    <string name="settings_language_en">English</string>
+    <string name="settings_language_system">跟随系统</string>
+    <string name="settings_data_management">数据管理</string>
+    <string name="settings_refresh_data">刷新数据</string>
+    <string name="settings_clear_cache">清除缓存</string>
+    <string name="settings_about">关于</string>
+    <string name="settings_version">版本: %s</string>
+
+    <!-- 通用 -->
+    <string name="loading">加载中...</string>
+    <string name="error">发生错误</string>
+    <string name="retry">重试</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <string name="share">分享</string>
+    <string name="year">年份</string>
+    <string name="country">国家</string>
+    <string name="expenditure">军费开支</string>
+    <string name="continent">大洲</string>
+    <string name="data_source">数据来源: SIPRI军费开支数据库 (1948-2023)</string>
+</resources> 
