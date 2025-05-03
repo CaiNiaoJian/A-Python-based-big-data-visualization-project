@@ -1,0 +1,317 @@
+{
+    "1960": {
+        "total_countries": 13,
+        "file": "year_1960.json",
+        "total_expenditure": 2480.956739363182
+    },
+    "1961": {
+        "total_countries": 35,
+        "file": "year_1961.json",
+        "total_expenditure": 36120.67380297988
+    },
+    "1962": {
+        "total_countries": 47,
+        "file": "year_1962.json",
+        "total_expenditure": 44504.9117001237
+    },
+    "1963": {
+        "total_countries": 61,
+        "file": "year_1963.json",
+        "total_expenditure": 91687.69963628838
+    },
+    "1964": {
+        "total_countries": 65,
+        "file": "year_1964.json",
+        "total_expenditure": 131098.43483040843
+    },
+    "1965": {
+        "total_countries": 75,
+        "file": "year_1965.json",
+        "total_expenditure": 142012.3247023901
+    },
+    "1966": {
+        "total_countries": 69,
+        "file": "year_1966.json",
+        "total_expenditure": 127144.28287925094
+    },
+    "1967": {
+        "total_countries": 77,
+        "file": "year_1967.json",
+        "total_expenditure": 123381.76201760015
+    },
+    "1968": {
+        "total_countries": 91,
+        "file": "year_1968.json",
+        "total_expenditure": 129880.6087218971
+    },
+    "1969": {
+        "total_countries": 107,
+        "file": "year_1969.json",
+        "total_expenditure": 139949.2870530138
+    },
+    "1970": {
+        "total_countries": 121,
+        "file": "year_1970.json",
+        "total_expenditure": 141498.50524837093
+    },
+    "1971": {
+        "total_countries": 123,
+        "file": "year_1971.json",
+        "total_expenditure": 145944.61561279936
+    },
+    "1972": {
+        "total_countries": 145,
+        "file": "year_1972.json",
+        "total_expenditure": 148091.1014794967
+    },
+    "1973": {
+        "total_countries": 157,
+        "file": "year_1973.json",
+        "total_expenditure": 155903.16242009582
+    },
+    "1974": {
+        "total_countries": 159,
+        "file": "year_1974.json",
+        "total_expenditure": 173320.65557063563
+    },
+    "1975": {
+        "total_countries": 163,
+        "file": "year_1975.json",
+        "total_expenditure": 179510.60957172787
+    },
+    "1976": {
+        "total_countries": 165,
+        "file": "year_1976.json",
+        "total_expenditure": 181750.98444513715
+    },
+    "1977": {
+        "total_countries": 171,
+        "file": "year_1977.json",
+        "total_expenditure": 189332.12478825243
+    },
+    "1978": {
+        "total_countries": 171,
+        "file": "year_1978.json",
+        "total_expenditure": 217506.43276956916
+    },
+    "1979": {
+        "total_countries": 175,
+        "file": "year_1979.json",
+        "total_expenditure": 246919.2298657507
+    },
+    "1980": {
+        "total_countries": 185,
+        "file": "year_1980.json",
+        "total_expenditure": 262668.1740300599
+    },
+    "1981": {
+        "total_countries": 183,
+        "file": "year_1981.json",
+        "total_expenditure": 271098.4039082188
+    },
+    "1982": {
+        "total_countries": 195,
+        "file": "year_1982.json",
+        "total_expenditure": 278176.0077836792
+    },
+    "1983": {
+        "total_countries": 201,
+        "file": "year_1983.json",
+        "total_expenditure": 280721.14902727783
+    },
+    "1984": {
+        "total_countries": 203,
+        "file": "year_1984.json",
+        "total_expenditure": 304786.590411549
+    },
+    "1985": {
+        "total_countries": 213,
+        "file": "year_1985.json",
+        "total_expenditure": 335214.92746318644
+    },
+    "1986": {
+        "total_countries": 209,
+        "file": "year_1986.json",
+        "total_expenditure": 386162.36264332454
+    },
+    "1987": {
+        "total_countries": 211,
+        "file": "year_1987.json",
+        "total_expenditure": 428267.37794406654
+    },
+    "1988": {
+        "total_countries": 219,
+        "file": "year_1988.json",
+        "total_expenditure": 450997.3984401764
+    },
+    "1989": {
+        "total_countries": 229,
+        "file": "year_1989.json",
+        "total_expenditure": 526351.4831932652
+    },
+    "1990": {
+        "total_countries": 233,
+        "file": "year_1990.json",
+        "total_expenditure": 579617.8338547309
+    },
+    "1991": {
+        "total_countries": 237,
+        "file": "year_1991.json",
+        "total_expenditure": 640496.2086103248
+    },
+    "1992": {
+        "total_countries": 239,
+        "file": "year_1992.json",
+        "total_expenditure": 734476.0975325392
+    },
+    "1993": {
+        "total_countries": 241,
+        "file": "year_1993.json",
+        "total_expenditure": 810015.0596275526
+    },
+    "1994": {
+        "total_countries": 231,
+        "file": "year_1994.json",
+        "total_expenditure": 898024.6492555601
+    },
+    "1995": {
+        "total_countries": 231,
+        "file": "year_1995.json",
+        "total_expenditure": 885839.3334341543
+    },
+    "1996": {
+        "total_countries": 239,
+        "file": "year_1996.json",
+        "total_expenditure": 921426.1325074239
+    },
+    "1997": {
+        "total_countries": 249,
+        "file": "year_1997.json",
+        "total_expenditure": 975083.0774951798
+    },
+    "1998": {
+        "total_countries": 245,
+        "file": "year_1998.json",
+        "total_expenditure": 1065015.1933507267
+    },
+    "1999": {
+        "total_countries": 259,
+        "file": "year_1999.json",
+        "total_expenditure": 1651426.9079107593
+    },
+    "2000": {
+        "total_countries": 257,
+        "file": "year_2000.json",
+        "total_expenditure": 1770482.3499325572
+    },
+    "2001": {
+        "total_countries": 257,
+        "file": "year_2001.json",
+        "total_expenditure": 1755522.884580262
+    },
+    "2002": {
+        "total_countries": 259,
+        "file": "year_2002.json",
+        "total_expenditure": 1869772.5873332715
+    },
+    "2003": {
+        "total_countries": 253,
+        "file": "year_2003.json",
+        "total_expenditure": 1396823.3376816376
+    },
+    "2004": {
+        "total_countries": 273,
+        "file": "year_2004.json",
+        "total_expenditure": 1459280.8942821152
+    },
+    "2005": {
+        "total_countries": 295,
+        "file": "year_2005.json",
+        "total_expenditure": 1396602.7097663265
+    },
+    "2006": {
+        "total_countries": 295,
+        "file": "year_2006.json",
+        "total_expenditure": 1416014.8917363086
+    },
+    "2007": {
+        "total_countries": 285,
+        "file": "year_2007.json",
+        "total_expenditure": 1451998.453925592
+    },
+    "2008": {
+        "total_countries": 293,
+        "file": "year_2008.json",
+        "total_expenditure": 1446574.4920376523
+    },
+    "2009": {
+        "total_countries": 293,
+        "file": "year_2009.json",
+        "total_expenditure": 1450732.3986052687
+    },
+    "2010": {
+        "total_countries": 285,
+        "file": "year_2010.json",
+        "total_expenditure": 1414513.7520862634
+    },
+    "2011": {
+        "total_countries": 291,
+        "file": "year_2011.json",
+        "total_expenditure": 1440279.2444556626
+    },
+    "2012": {
+        "total_countries": 297,
+        "file": "year_2012.json",
+        "total_expenditure": 1486976.60106848
+    },
+    "2013": {
+        "total_countries": 299,
+        "file": "year_2013.json",
+        "total_expenditure": 1511981.2761639329
+    },
+    "2014": {
+        "total_countries": 305,
+        "file": "year_2014.json",
+        "total_expenditure": 1632631.8989299398
+    },
+    "2015": {
+        "total_countries": 315,
+        "file": "year_2015.json",
+        "total_expenditure": 1906377.1102801338
+    },
+    "2016": {
+        "total_countries": 317,
+        "file": "year_2016.json",
+        "total_expenditure": 2152755.6425134437
+    },
+    "2017": {
+        "total_countries": 319,
+        "file": "year_2017.json",
+        "total_expenditure": 2320221.283254913
+    },
+    "2018": {
+        "total_countries": 311,
+        "file": "year_2018.json",
+        "total_expenditure": 2413030.020930941
+    },
+    "2019": {
+        "total_countries": 309,
+        "file": "year_2019.json",
+        "total_expenditure": 2675597.1961151715
+    },
+    "2020": {
+        "total_countries": 319,
+        "file": "year_2020.json",
+        "total_expenditure": 3020149.035568203
+    },
+    "2021": {
+        "total_countries": 311,
+        "file": "year_2021.json",
+        "total_expenditure": 3128969.920685079
+    },
+    "2022": {
+        "total_countries": 311,
+        "file": "year_2022.json",
+        "total_expenditure": 3299178.8809326654
+    }
+}

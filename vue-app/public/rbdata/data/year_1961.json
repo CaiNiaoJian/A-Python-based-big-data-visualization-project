@@ -1,0 +1,177 @@
+[
+    {
+        "Country": "Australia",
+        "Continent": "aisan",
+        "Expenditure": 0.0
+    },
+    {
+        "Country": "Costa Rica",
+        "Continent": "american",
+        "Expenditure": 0.0
+    },
+    {
+        "Country": "Mexico",
+        "Continent": "american",
+        "Expenditure": 34.7976878613
+    },
+    {
+        "Country": "United States of America",
+        "Continent": "american",
+        "Expenditure": 14088.1555906981
+    },
+    {
+        "Country": "Argentina",
+        "Continent": "american",
+        "Expenditure": 0.0
+    },
+    {
+        "Country": "Peru",
+        "Continent": "american",
+        "Expenditure": 23.9027683997
+    },
+    {
+        "Country": "Country",
+        "Continent": "current_data",
+        "Expenditure": 1949.0
+    },
+    {
+        "Country": "Costa Rica",
+        "Continent": "current_data",
+        "Expenditure": 0.0
+    },
+    {
+        "Country": "Mexico",
+        "Continent": "current_data",
+        "Expenditure": 34.7976878613
+    },
+    {
+        "Country": "United States of America",
+        "Continent": "current_data",
+        "Expenditure": 14088.1555906981
+    },
+    {
+        "Country": "Argentina",
+        "Continent": "current_data",
+        "Expenditure": 0.0
+    },
+    {
+        "Country": "Peru",
+        "Continent": "current_data",
+        "Expenditure": 23.9027683997
+    },
+    {
+        "Country": "Australia",
+        "Continent": "current_data",
+        "Expenditure": 0.0
+    },
+    {
+        "Country": "Belgium",
+        "Continent": "current_data",
+        "Expenditure": 182.3403366201
+    },
+    {
+        "Country": "Denmark",
+        "Continent": "current_data",
+        "Expenditure": 69.2974013474
+    },
+    {
+        "Country": "France",
+        "Continent": "current_data",
+        "Expenditure": 1211.3222395541
+    },
+    {
+        "Country": "Greece",
+        "Continent": "current_data",
+        "Expenditure": 324.73086165
+    },
+    {
+        "Country": "Italy",
+        "Continent": "current_data",
+        "Expenditure": 467.2343005806
+    },
+    {
+        "Country": "Luxembourg",
+        "Continent": "current_data",
+        "Expenditure": 2.2298851906
+    },
+    {
+        "Country": "Netherlands",
+        "Continent": "current_data",
+        "Expenditure": 231.3430038607
+    },
+    {
+        "Country": "Norway",
+        "Continent": "current_data",
+        "Expenditure": 67.177457424
+    },
+    {
+        "Country": "Portugal",
+        "Continent": "current_data",
+        "Expenditure": 41.1144277357
+    },
+    {
+        "Country": "Spain",
+        "Continent": "current_data",
+        "Expenditure": 144.5090803671
+    },
+    {
+        "Country": "Türkiye",
+        "Continent": "current_data",
+        "Expenditure": 197.6818602005
+    },
+    {
+        "Country": "Türkiye",
+        "Continent": "easternasian",
+        "Expenditure": 197.6818602005
+    },
+    {
+        "Country": "Belgium",
+        "Continent": "europen",
+        "Expenditure": 182.3403366201
+    },
+    {
+        "Country": "Denmark",
+        "Continent": "europen",
+        "Expenditure": 69.2974013474
+    },
+    {
+        "Country": "France",
+        "Continent": "europen",
+        "Expenditure": 1211.3222395541
+    },
+    {
+        "Country": "Greece",
+        "Continent": "europen",
+        "Expenditure": 324.73086165
+    },
+    {
+        "Country": "Italy",
+        "Continent": "europen",
+        "Expenditure": 467.2343005806
+    },
+    {
+        "Country": "Luxembourg",
+        "Continent": "europen",
+        "Expenditure": 2.2298851906
+    },
+    {
+        "Country": "Netherlands",
+        "Continent": "europen",
+        "Expenditure": 231.3430038607
+    },
+    {
+        "Country": "Norway",
+        "Continent": "europen",
+        "Expenditure": 67.177457424
+    },
+    {
+        "Country": "Portugal",
+        "Continent": "europen",
+        "Expenditure": 41.1144277357
+    },
+    {
+        "Country": "Spain",
+        "Continent": "europen",
+        "Expenditure": 144.5090803671
+    }
+]
