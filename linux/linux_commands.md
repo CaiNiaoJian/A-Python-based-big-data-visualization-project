@@ -253,3 +253,107 @@ grep -l "old_text" *.txt | xargs sed -i 's/old_text/new_text/g'
 ## 实验结果
 
 请在此处添加各命令的运行结果截图。
+
+## 精选实用命令集合
+
+以下是20-25条最实用的Linux命令，重点关注管道组合和高效操作，并说明其作用和一般输出结果：
+
+### 1. `find . -name "*.log" -mtime -7 | xargs grep "ERROR"`
+**作用**：查找最近7天内修改的所有日志文件中包含ERROR的行  
+**输出**：文件名:行号:包含ERROR的内容
+
+### 2. `ps aux | grep java | grep -v grep | awk '{print $2}' | xargs kill -9`
+**作用**：查找并强制终止所有Java进程  
+**输出**：无输出，但会终止所有匹配的进程
+
+### 3. `du -sh * | sort -rh | head -5`
+**作用**：显示当前目录下占用空间最大的5个文件/目录  
+**输出**：文件大小和文件名，按大小降序排列
+
+### 4. `find / -type f -size +100M -exec ls -lh {} \;`
+**作用**：查找系统中所有大于100MB的文件  
+**输出**：文件的详细信息，包括权限、大小、修改时间等
+
+### 5. `netstat -tuln | grep LISTEN`
+**作用**：显示所有正在监听的TCP和UDP端口  
+**输出**：协议、本地地址、外部地址和连接状态
+
+### 6. `history | awk '{print $2}' | sort | uniq -c | sort -rn | head -10`
+**作用**：显示最常用的10个命令  
+**输出**：使用次数和命令名称，按使用频率降序排列
+
+### 7. `find . -type f -name "*.txt" -exec sed -i 's/old/new/g' {} \;`
+**作用**：在所有txt文件中将"old"替换为"new"  
+**输出**：无输出，但会修改所有匹配的文件
+
+### 8. `ls -la | grep ^d | sort -k5 -nr`
+**作用**：列出当前目录下所有子目录并按大小排序  
+**输出**：目录的详细信息，按大小降序排列
+
+### 9. `cat /var/log/syslog | grep $(date +"%b %d") | grep ERROR`
+**作用**：查看今天的系统日志中的错误信息  
+**输出**：今天的系统日志中包含ERROR的行
+
+### 10. `ps aux | sort -nk 3 | tail -5`
+**作用**：显示CPU占用最高的5个进程  
+**输出**：进程详细信息，包括CPU和内存使用率
+
+### 11. `find . -name "*.bak" -o -name "*.tmp" | xargs rm -f`
+**作用**：删除所有备份和临时文件  
+**输出**：无输出，但会删除所有匹配的文件
+
+### 12. `tar -czvf backup-$(date +%Y%m%d).tar.gz /important/directory`
+**作用**：创建带日期的目录备份  
+**输出**：压缩过程中处理的文件列表
+
+### 13. `df -h | grep -v tmpfs | sort -k5 -r`
+**作用**：显示磁盘使用情况，排除临时文件系统，按使用率排序  
+**输出**：文件系统、大小、已用空间、可用空间和使用率
+
+### 14. `grep -r --include="*.php" "function" /var/www | wc -l`
+**作用**：统计Web目录下所有PHP文件中函数的数量  
+**输出**：一个数字，表示匹配的行数
+
+### 15. `find . -type f -exec chmod 644 {} \; && find . -type d -exec chmod 755 {} \;`
+**作用**：递归设置文件和目录的标准权限  
+**输出**：无输出，但会修改所有文件和目录的权限
+
+### 16. `ps aux | grep -i memory | awk '{sum+=$6} END {print sum/1024 "MB"}'`
+**作用**：计算特定进程组使用的总内存  
+**输出**：一个数字，表示总内存使用量（MB）
+
+### 17. `curl -s https://api.example.com/data | jq '.items[] | select(.status=="active")'`
+**作用**：获取API数据并过滤出活跃项目  
+**输出**：格式化的JSON数据，只包含活跃项目
+
+### 18. `find . -type f -mtime +30 -name "*.log" | xargs tar -czvf old-logs.tar.gz`
+**作用**：将30天前的日志文件打包  
+**输出**：压缩过程中处理的文件列表
+
+### 19. `cat /etc/passwd | cut -d: -f1,3 | sort -t: -k2 -n`
+**作用**：列出所有用户及其UID，按UID排序  
+**输出**：用户名和UID，按UID升序排列
+
+### 20. `dmesg | grep -i error | tee system-errors.log`
+**作用**：查找内核错误并同时保存到文件  
+**输出**：内核日志中包含error的行，同时写入文件
+
+### 21. `watch -n 1 'ps aux | sort -nk 3 | tail -5'`
+**作用**：每秒更新显示CPU占用最高的5个进程  
+**输出**：实时更新的进程列表
+
+### 22. `find . -name "*.jpg" | xargs -I{} convert {} -resize 50% {}.resized`
+**作用**：批量将所有JPG图片调整为原来的50%大小  
+**输出**：无输出，但会生成调整大小后的图片
+
+### 23. `ls -la | awk '{total += $5} END {print "Total size: " total/1024/1024 " MB"}'`
+**作用**：计算当前目录下所有文件的总大小  
+**输出**：一行文本，显示总大小（MB）
+
+### 24. `journalctl -u nginx --since today | grep error | tee -a nginx-errors.log`
+**作用**：查看今天的Nginx服务错误并追加到日志文件  
+**输出**：今天的Nginx错误日志，同时追加到文件
+
+### 25. `find /var/log -type f -name "*.log" -size +100M -exec ls -lh {} \; | sort -k5hr`
+**作用**：查找大于100MB的日志文件并按大小排序  
+**输出**：大型日志文件的详细信息，按大小降序排列
