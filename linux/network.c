@@ -8,6 +8,7 @@
 #include <pthread.h>
 #include <fcntl.h>
 #include <sys/stat.h>
+#include "common.h"
 
 #define PORT 8080
 #define BUFFER_SIZE 4096

@@ -1,23 +1,18 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <pthread.h>
-#include <sys/inotify.h>
-#include <limits.h>
+#include "common.h"
 
+#ifdef PLATFORM_LINUX
 #define EVENT_SIZE  (sizeof(struct inotify_event))
 #define BUF_LEN     (1024 * (EVENT_SIZE + NAME_MAX + 1))
+#endif
 
 // 互斥锁，保护共享资源
 pthread_mutex_t file_mutex = PTHREAD_MUTEX_INITIALIZER;
 
-// 监控目录结构
-typedef struct {
-    char path[PATH_MAX];
-    int watch_descriptor;
-} watch_dir;
+// 全局变量
+extern sync_queue *queue;
 
-// 文件事件处理函数
+#ifdef PLATFORM_LINUX
+// Linux平台下的文件事件处理函数
 void process_file_event(struct inotify_event *event, char *watch_path) {
     // 加锁保护共享资源
     pthread_mutex_lock(&file_mutex);
@@ -26,21 +21,44 @@ void process_file_event(struct inotify_event *event, char *watch_path) {
         if (event->mask & IN_CREATE) {
             printf("文件被创建: %s/%s\n", watch_path, event->name);
             // 将事件添加到同步队列
-            add_to_sync_queue(event->name, watch_path, "CREATE");
+            add_to_sync_queue(queue, event->name, watch_path, "CREATE");
         } else if (event->mask & IN_DELETE) {
             printf("文件被删除: %s/%s\n", watch_path, event->name);
-            add_to_sync_queue(event->name, watch_path, "DELETE");
+            add_to_sync_queue(queue, event->name, watch_path, "DELETE");
         } else if (event->mask & IN_MODIFY) {
             printf("文件被修改: %s/%s\n", watch_path, event->name);
-            add_to_sync_queue(event->name, watch_path, "MODIFY");
+            add_to_sync_queue(queue, event->name, watch_path, "MODIFY");
         }
     }
     
     // 解锁
     pthread_mutex_unlock(&file_mutex);
 }
+#else
+// Windows平台下的文件事件处理函数
+void process_file_event(win_file_event *event, char *watch_path) {
+    // 加锁保护共享资源
+    pthread_mutex_lock(&file_mutex);
+    
+    // Windows下根据事件类型处理
+    if (event->action == FILE_ACTION_ADDED) {
+        printf("文件被创建: %s/%s\n", watch_path, event->filename);
+        add_to_sync_queue(queue, event->filename, watch_path, "CREATE");
+    } else if (event->action == FILE_ACTION_REMOVED) {
+        printf("文件被删除: %s/%s\n", watch_path, event->filename);
+        add_to_sync_queue(queue, event->filename, watch_path, "DELETE");
+    } else if (event->action == FILE_ACTION_MODIFIED) {
+        printf("文件被修改: %s/%s\n", watch_path, event->filename);
+        add_to_sync_queue(queue, event->filename, watch_path, "MODIFY");
+    }
+    
+    // 解锁
+    pthread_mutex_unlock(&file_mutex);
+}
+#endif
 
-// 监控线程函数
+#ifdef PLATFORM_LINUX
+// Linux平台下的监控线程函数
 void* monitor_directory(void *arg) {
     watch_dir *dir = (watch_dir*)arg;
     char buffer[BUF_LEN];
@@ -66,7 +84,7 @@ void* monitor_directory(void *arg) {
     printf("开始监控目录: %s\n", dir->path);
     
     // 持续监控文件事件
-    while (1) {
+    while (running) {
         int i = 0, length;
         length = read(fd, buffer, BUF_LEN);
         
@@ -91,6 +109,37 @@ void* monitor_directory(void *arg) {
     
     return NULL;
 }
+#else
+// Windows平台下的监控线程函数
+void* monitor_directory(void *arg) {
+    watch_dir *dir = (watch_dir*)arg;
+    win_file_event event;
+    
+    // 初始化Windows文件监控
+    dir->handle = win_init_monitor(dir->path);
+    if (dir->handle == INVALID_HANDLE_VALUE) {
+        printf("Windows文件监控初始化失败: %d\n", GetLastError());
+        return NULL;
+    }
+    
+    printf("开始监控目录: %s\n", dir->path);
+    
+    // 持续监控文件事件
+    while (running) {
+        if (win_read_changes(dir->handle, &event) == 0) {
+            // 处理文件事件
+            process_file_event(&event, dir->path);
+        } else {
+            Sleep(100); // 避免占用过多CPU
+        }
+    }
+    
+    // 清理资源
+    FindCloseChangeNotification(dir->handle);
+    
+    return NULL;
+}
+#endif
 
 // 初始化监控系统
 int init_monitor_system(char *directory) {

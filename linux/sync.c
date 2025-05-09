@@ -1,27 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <pthread.h>
-#include <semaphore.h>
-
-#define MAX_QUEUE_SIZE 100
-
-// 同步队列结构
-typedef struct {
-    char filename[256];
-    char path[256];
-    char operation[10];
-} sync_item;
-
-// 队列结构
-typedef struct {
-    sync_item items[MAX_QUEUE_SIZE];
-    int front;
-    int rear;
-    int count;
-    pthread_mutex_t mutex;
-    sem_t empty;
-    sem_t full;
-} sync_queue;
+#include "common.h"
 
 // 初始化同步队列
 sync_queue* init_sync_queue() {
@@ -45,7 +22,7 @@ sync_queue* init_sync_queue() {
 
 // 添加项目到同步队列
 int add_to_sync_queue(sync_queue *queue, const char *filename, 
-                     const char *path, const char *operation) {
+const char *path, const char *operation) {
     // 等待空槽
     sem_wait(&queue->empty);
     

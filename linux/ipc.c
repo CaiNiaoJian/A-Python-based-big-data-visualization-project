@@ -6,23 +6,7 @@
 #include <sys/shm.h>
 #include <sys/msg.h>
 #include <errno.h>
-
-#define SHM_SIZE 1024
-#define MSG_SIZE 256
-#define PROJECT_ID 123
-
-// 消息结构
-typedef struct {
-    long mtype;  // 消息类型
-    char mtext[MSG_SIZE];  // 消息内容
-} message_buf;
-
-// 共享内存结构
-typedef struct {
-    int status;  // 系统状态
-    int file_count;  // 已同步文件数
-    char last_file[256];  // 最后同步的文件
-} shared_data;
+#include "common.h"
 
 // 初始化共享内存
 int init_shared_memory() {
