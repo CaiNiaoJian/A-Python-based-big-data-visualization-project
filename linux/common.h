@@ -45,6 +45,11 @@
     typedef HANDLE sem_t;
     typedef HANDLE pid_t;
     
+    // 定义Windows下的文件操作常量
+    #define FILE_ACTION_ADDED 1
+    #define FILE_ACTION_REMOVED 2
+    #define FILE_ACTION_MODIFIED 3
+    
     // 定义未定义的常量
     #ifndef PATH_MAX
         #define PATH_MAX 260

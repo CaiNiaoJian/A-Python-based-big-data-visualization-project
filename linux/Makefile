@@ -4,8 +4,8 @@
 ifeq ($(OS),Windows_NT)
     PLATFORM = WINDOWS
     CC = g++
-    CFLAGS = -Wall -std=c++11 -DPLATFORM_WINDOWS
-    LDFLAGS = -lws2_32
+    CFLAGS = -Wall -std=c++11 -DPLATFORM_WINDOWS -D_WIN32_WINNT=0x0600
+    LDFLAGS = -lws2_32 -lpsapi -lwinmm
     RM = del /Q
     TARGET = filesync.exe
 else

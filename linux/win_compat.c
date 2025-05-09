@@ -95,8 +95,19 @@ int sem_destroy(sem_t *sem) {
 
 // Windows下的文件监控初始化
 HANDLE win_init_monitor(const char *path) {
+    // 转换路径格式，确保兼容性
+    char win_path[MAX_PATH];
+    strncpy(win_path, path, MAX_PATH);
+    
+    // 将正斜杠转换为反斜杠
+    for (int i = 0; win_path[i] != '\0'; i++) {
+        if (win_path[i] == '/') {
+            win_path[i] = '\\';
+        }
+    }
+    
     HANDLE handle = FindFirstChangeNotification(
-        path,                   // 监控的目录
+        win_path,               // 监控的目录
         TRUE,                   // 监控子目录
         FILE_NOTIFY_CHANGE_FILE_NAME |  // 文件创建/删除
         FILE_NOTIFY_CHANGE_DIR_NAME |   // 目录创建/删除
